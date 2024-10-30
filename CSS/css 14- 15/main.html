@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+    <style>
+        /* Đặt border-box cho tất cả các phần tử để tính toán kích thước dễ hơn */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Phần tử chính với các thuộc tính mô hình hộp */
+        .box {
+            width: 300px;                   /* Chiều rộng của hộp */
+            height: 150px;                  /* Chiều cao của hộp */
+            padding: 20px;                  /* Vùng đệm trong, tạo khoảng cách với nội dung */
+            border: 2px solid #4CAF50;      /* Đường viền màu xanh */
+            margin: 20px auto;              /* Căn giữa với khoảng cách bên ngoài */
+            background-color: #e3f2fd;      /* Màu nền */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Tạo bóng cho hộp */
+            border-radius: 10px;            /* Bo tròn các góc hộp */
+        }
+
+        .box-content {
+            color: #333;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <div class="box-content">
+        Đây là một ví dụ về mô hình hộp trong CSS! 🎨
+    </div>
+</div>
+
+</body>
+</html>
