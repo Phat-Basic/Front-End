@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.top-nav {
+    background: #2a2a2a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.nav-left {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    padding: 0.5rem 1rem;
+    background: #3a3a3a;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background: #4a4a4a;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+}
+
+.forum-section {
+    background: #2a2a2a;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.section-header {
+    padding: 1rem;
+    border-bottom: 1px solid #3a3a3a;
+    font-weight: bold;
+}
+
+.thread-list {
+    list-style: none;
+}
+
+.thread-item {
+    display: grid;
+    grid-template-columns: auto 100px 100px;
+    padding: 1rem;
+    border-bottom: 1px solid #3a3a3a;
+    gap: 1rem;
+}
+
+.thread-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.thread-title {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+.thread-title:hover {
+    text-decoration: underline;
+}
+
+.thread-meta {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.thread-stats {
+    text-align: center;
+    color: #888;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.tag-news { background: #2c5282; }
+.tag-discussion { background: #2d3748; }
+.tag-help { background: #744210; }
+
+.latest-posts {
+    background: #2a2a2a;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.latest-post-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-button {
+    color: white;
+    text-decoration: none;
+    background-color: #ff6b6b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ff4b4b;
+}
